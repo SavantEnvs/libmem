@@ -1,0 +1,9 @@
+project: savantenvs/libmem
+target: fuzz_asm
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_asm/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_asm
+    libfuzzer: true
+    timeout: 5

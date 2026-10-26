@@ -1,0 +1,10 @@
+# Per-Dockerfile ignore list for `docker build -f mayhem/Dockerfile .`. It replaces upstream's .dockerignore,
+# which excludes `.git/` (the commit image must carry the full history) and the Dockerfile itself.
+build*/
+bindings/rust/target/
+bindings/python/dist/
+bindings/python/build/
+examples/rust/target/
+*.swp
+*~
+.DS_Store

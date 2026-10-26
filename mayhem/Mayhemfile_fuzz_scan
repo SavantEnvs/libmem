@@ -1,0 +1,9 @@
+project: savantenvs/libmem
+target: fuzz_scan
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_scan/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_scan
+    libfuzzer: true
+    timeout: 5

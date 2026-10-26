@@ -1,0 +1,1 @@
+push rbp; mov rbp, rsp; mov eax, [rip + 1337]; call rax; mov rsp, rbp; pop rbp; ret

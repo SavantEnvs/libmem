@@ -1,0 +1,1 @@
+push ebp; mov ebp, esp; mov eax, 1337; call 0xdeadbeef; mov esp, ebp; pop ebp; ret
